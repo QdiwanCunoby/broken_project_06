@@ -1,0 +1,5 @@
+// Secret di test: impostati PRIMA che src/config/env.ts venga importato (fail fast se mancano)
+process.env.NODE_ENV = "test";
+process.env.JWT_SECRET = "test-access-secret-test-access-secret-0123456789";
+process.env.JWT_REFRESH_SECRET = "test-refresh-secret-test-refresh-secret-0123456789";
+process.env.LOG_LEVEL = "silent";
